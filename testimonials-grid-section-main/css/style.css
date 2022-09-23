@@ -120,7 +120,7 @@ footer {
   color: hsl(228deg, 45%, 44%);
 }
 
-@media (max-width: 118px) {
+@media (max-width: 1180px) {
   .container {
     grid-template-areas: "card-1 card-1 card-2 card-2" "card-5 card-5 card-5 card-5" "card-3 card-3 card-4 card-4";
   }
