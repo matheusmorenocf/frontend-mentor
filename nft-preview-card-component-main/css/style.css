@@ -94,6 +94,7 @@ main {
   color: hsl(178deg, 100%, 50%);
   font-weight: bold;
   display: flex;
+  align-items: center;
   gap: 0.3rem;
   white-space: nowrap;
 }
@@ -101,6 +102,7 @@ main {
   font-size: 0.9rem;
   color: hsl(215deg, 51%, 70%);
   display: flex;
+  align-items: center;
   gap: 0.3rem;
   white-space: nowrap;
 }

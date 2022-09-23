@@ -95,6 +95,7 @@ main{
     color: $color-secondary;
     font-weight: bold;
     display: flex;
+    align-items: center;
     gap: .3rem;
     white-space: nowrap;
   }
@@ -102,6 +103,7 @@ main{
     font-size: .9rem;
     color: $color-primary;
     display: flex;
+    align-items: center;
     gap: .3rem;
     white-space: nowrap;
   }
