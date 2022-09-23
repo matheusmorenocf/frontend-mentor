@@ -51,7 +51,7 @@ main {
   font-size: 0.9rem;
 }
 .card-user .user-status {
-  color: hsla(0deg, 0%, 81%, 0.5);
+  color: hsla(0deg, 0%, 81%, 0.7);
   font-size: 0.7rem;
 }
 
@@ -61,7 +61,7 @@ main {
 }
 
 .card-description {
-  color: hsla(0deg, 0%, 81%, 0.5);
+  color: hsla(0deg, 0%, 81%, 0.7);
   font-size: 0.8rem;
 }
 
@@ -69,13 +69,13 @@ main {
   color: hsl(219deg, 29%, 14%);
 }
 .card-5 .user-status, .card-3 .user-status {
-  color: hsla(219deg, 29%, 14%, 0.5);
+  color: hsla(219deg, 29%, 14%, 0.7);
 }
 .card-5 .card-title, .card-3 .card-title {
   color: hsl(219deg, 29%, 14%);
 }
 .card-5 .card-description, .card-3 .card-description {
-  color: hsla(219deg, 29%, 14%, 0.5);
+  color: hsla(219deg, 29%, 14%, 0.7);
 }
 
 .card-1 {
