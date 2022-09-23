@@ -40,7 +40,7 @@ main{
   gap: 1.5rem;
 }
 .card-container{
-  padding: 1rem;
+  padding: 1.5rem 1.8rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -128,7 +128,7 @@ footer{
   }
 }
 
-@media (max-width: 1150px){
+@media (max-width: 118px){
   .container{
     grid-template-areas: 
     "card-1 card-1 card-2 card-2"
