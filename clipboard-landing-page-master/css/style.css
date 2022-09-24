@@ -6,6 +6,7 @@
   font: inherit;
   vertical-align: baseline;
   font-family: "Bai Jamjuree", sans-serif;
+  transition: all ease-in 0.4s;
 }
 
 header {
@@ -100,14 +101,36 @@ h3 {
   width: 100%;
 }
 
+.center-col {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.center-col .col {
+  width: 20rem;
+  text-align: center;
+}
+.center-col .col .col-img {
+  margin-bottom: 1.5rem;
+}
+.center-col .col p {
+  margin-top: 0.7rem;
+  font-size: 1rem;
+}
+
+.img-logo {
+  align-items: center;
+  gap: 5rem;
+  padding: 5rem 2rem;
+}
+
 button {
   width: 12rem;
   padding: 0.8rem 0;
   border-radius: 23px;
-}
-button a {
-  text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 .button {
@@ -176,12 +199,26 @@ footer {
     margin-left: -4rem;
   }
 }
-@media (min-width: 1400px) and (max-width: 1599px) {
+@media (min-width: 1440px) and (max-width: 1600px) {
   .text-container-2 .img {
     margin-left: -1.8rem;
   }
 }
+@media (min-width: 768px) {
+  .button .download-ios:hover {
+    background-color: hsl(171deg, 81%, 55%);
+  }
+  .button .download-mac:hover {
+    background-color: hsl(233deg, 89%, 75%);
+  }
+  .footer-social img:hover {
+    transform: scale(1.1);
+  }
+}
 @media (max-width: 768px) {
+  main {
+    gap: 5.5rem;
+  }
   .text-container-2 {
     flex-direction: column;
     align-items: center;
@@ -233,13 +270,16 @@ footer {
     padding: 0 1rem;
   }
   h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
   }
   h3 {
     font-size: 1.5rem;
   }
   .paragraph {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   button {
     width: 20rem;

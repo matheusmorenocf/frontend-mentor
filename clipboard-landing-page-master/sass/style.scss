@@ -3,7 +3,8 @@ $color-2: hsl(233, 100%, 69%);
 $color-3: hsl(210, 10%, 33%);
 $color-4: hsl(206, 26%, 95%);
 $color-5: hsl(228, 45%, 44%);
-
+$color-hover-1: hsl(171, 81%, 55%);
+$color-hover-2: hsl(233, 89%, 75%);
 
 *{
   margin: 0;
@@ -13,6 +14,7 @@ $color-5: hsl(228, 45%, 44%);
   font: inherit;
   vertical-align: baseline;
   font-family: 'Bai Jamjuree', sans-serif;
+  transition: all ease-in 0.4s
 }
 header{
   background: url('/images/bg-header-desktop.png') center no-repeat;
@@ -100,24 +102,42 @@ h3{
     width: 100%;
   }
 }
-
-
+.center-col{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  .col{
+    width: 20rem;
+    text-align: center;
+    .col-img{
+      margin-bottom: 1.5rem;
+    }
+    p{
+      margin-top: .7rem;
+      font-size: 1rem;
+    }
+  }
+}
+.img-logo{
+  align-items: center;
+  gap: 5rem;
+  padding: 5rem 2rem;
+}
 button{
   width: 12rem;
   padding: .8rem 0;
   border-radius: 23px;
-  a{
-    text-decoration: none;
-    color: white;
-  }
+  color: white;
+  cursor: pointer;
 }
-
 .button{
   padding: 2rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  
   .download-ios{
     background-color: $color-1;
   }
@@ -165,11 +185,13 @@ footer{
   margin-right: 2%;
   display: flex;
   gap: 1rem;
+
   img{
     width: 1rem;
     height: 1rem;
   }
 }
+
 @media (min-width:1600px){
   .text-container-2{
     .img{
@@ -177,14 +199,40 @@ footer{
     }
   }
 }
-@media (min-width:1400px) and (max-width:1599px){
+@media (min-width: 1440px) and (max-width: 1600px){
   .text-container-2{
     .img{
       margin-left: -1.8rem;
     }
   }
 }
+
+@media (min-width: 768px) { // Hover effects only on display above 768px
+  .button{
+    .download-ios{
+      &:hover{
+        background-color: $color-hover-1;
+      }
+    }
+    .download-mac{
+      &:hover{
+        background-color: $color-hover-2;
+      }
+    }
+  }
+  .footer-social{
+    img{
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
 @media (max-width: 768px){
+  main{
+    gap: 5.5rem;
+  }
   .text-container-2{
     flex-direction: column;
     align-items: center;
@@ -239,13 +287,16 @@ footer{
     padding: 0 1rem;
   }
   h1{
-    font-size: 2.3rem;
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.7rem;
   }
   h3{
     font-size: 1.5rem;
   }
   .paragraph{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   button{
     width: 20rem;
@@ -255,3 +306,4 @@ footer{
   }
   
 }
+
