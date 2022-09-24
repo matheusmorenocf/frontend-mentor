@@ -113,9 +113,11 @@ h3 {
 }
 .center-col .col {
   width: 20rem;
+  height: 13rem;
   text-align: center;
 }
 .center-col .col .col-img {
+  height: 2.75rem;
   margin-bottom: 1.5rem;
 }
 .center-col .col p {
