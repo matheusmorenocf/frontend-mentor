@@ -1,0 +1,257 @@
+$color-1: hsl(171, 66%, 44%);
+$color-2: hsl(233, 100%, 69%);
+$color-3: hsl(210, 10%, 33%);
+$color-4: hsl(206, 26%, 95%);
+$color-5: hsl(228, 45%, 44%);
+
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+header{
+  background: url('/images/bg-header-desktop.png') center no-repeat;
+  background-size: cover;
+  min-height: 20vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.container-logo{
+  width: 6rem;
+  img{
+    width: 100%;
+  }
+}
+main{
+  background-color: #f9f9f9;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.title{
+  font-weight: 600;
+  color: $color-3;
+}
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+.paragraph{
+  color: $color-3;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+
+
+
+.text-container-2{
+  display: flex;
+  gap: 5rem;
+  .img{
+    width: 50%;
+    img{
+      width: 100%;
+    }
+  }
+  .text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    line-height: 2rem;
+    .row{
+      width:20rem;
+      p{
+        margin-top: .7rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+.img-2{
+  margin: 0 auto;
+  width: 50%;
+  img{
+    width: 100%;
+  }
+}
+
+
+button{
+  width: 12rem;
+  padding: .8rem 0;
+  border-radius: 23px;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.button{
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  .download-ios{
+    background-color: $color-1;
+  }
+  .download-mac{
+    background-color: $color-2;
+  }
+}
+
+
+footer{
+  padding: 1rem 0;
+  background-color: $color-4;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-logo{
+  margin-left: 8%;
+  img{
+    width: 2.5rem;
+  }
+}
+.footer-links{
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 3rem;
+  p{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    a{
+      text-decoration: none;
+      color: $color-3;
+      &:hover{
+        color: $color-1;
+      }
+    }
+  }
+}
+.footer-social{
+  margin-right: 2%;
+  display: flex;
+  gap: 1rem;
+  img{
+    width: 1rem;
+    height: 1rem;
+  }
+}
+@media (min-width:1600px){
+  .text-container-2{
+    .img{
+      margin-left: -4rem;
+    }
+  }
+}
+@media (min-width:1400px) and (max-width:1599px){
+  .text-container-2{
+    .img{
+      margin-left: -1.8rem;
+    }
+  }
+}
+@media (max-width: 768px){
+  .text-container-2{
+    flex-direction: column;
+    align-items: center;
+    .img{
+      width: 80%;
+      img{
+        width: 100%;
+        
+      }
+    }
+    .text-content{
+      padding: 2rem 0;
+      text-align: center;
+      .row{
+        h3{
+          font-size: 1.7rem;
+        }
+        p{
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .img-2{
+    width: 80%;
+  }
+}
+@media (max-width: 585px){
+  footer{
+    padding: 2rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .footer-logo{
+    margin: 0 auto;
+  }
+  .footer-links{
+    flex-direction: column;
+    justify-content: center;
+    p{
+      align-items: center;
+    }
+  }
+  .footer-social{
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 425px){
+  .center{
+    padding: 0 1rem;
+  }
+  h1{
+    font-size: 2.3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .paragraph{
+    font-size: 1.2rem;
+  }
+  button{
+    width: 20rem;
+    a{
+      font-size: 1.2rem;
+    }
+  }
+  
+}
