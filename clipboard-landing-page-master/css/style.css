@@ -10,7 +10,7 @@
 }
 
 header {
-  background: url("/images/bg-header-desktop.png") center no-repeat;
+  background: url("../images/bg-header-desktop.png") center no-repeat;
   background-size: cover;
   min-height: 20vh;
   display: flex;
