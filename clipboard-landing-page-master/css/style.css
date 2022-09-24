@@ -9,10 +9,14 @@
   transition: all ease-in 0.2s;
 }
 
+body {
+  min-height: 100vh;
+}
+
 header {
   background: url("../images/bg-header-desktop.png") center no-repeat;
   background-size: cover;
-  min-height: 20vh;
+  min-height: 30vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -28,7 +32,7 @@ header {
 
 main {
   background-color: #f9f9f9;
-  min-height: 70vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -131,6 +135,7 @@ button {
   border-radius: 23px;
   color: white;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .button {
@@ -158,7 +163,7 @@ button {
 footer {
   padding: 1rem 0;
   background-color: hsl(206deg, 26%, 95%);
-  min-height: 10vh;
+  min-height: 20vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
