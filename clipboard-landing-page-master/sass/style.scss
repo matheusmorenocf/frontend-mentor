@@ -75,7 +75,7 @@ h3{
 
 .text-container-2{
   display: flex;
-  gap: 5rem;
+  gap:10rem;
   .img{
     width: 50%;
     img{
@@ -83,6 +83,7 @@ h3{
     }
   }
   .text-content{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,11 +165,11 @@ h3{
 footer{
   padding: 1rem 0;
   background-color: $color-4;
-  min-height: 20vh;
+  min-height: 10vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .footer-logo{
   margin-left: 8%;
@@ -196,7 +197,8 @@ footer{
   }
 }
 .footer-social{
-  margin-right: 2%;
+  margin-right: 2rem;
+  margin-left: 2rem;
   display: flex;
   gap: 1rem;
 

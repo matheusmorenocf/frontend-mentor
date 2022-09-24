@@ -73,7 +73,7 @@ h3 {
 
 .text-container-2 {
   display: flex;
-  gap: 5rem;
+  gap: 10rem;
 }
 .text-container-2 .img {
   width: 50%;
@@ -166,11 +166,11 @@ h3 {
 footer {
   padding: 1rem 0;
   background-color: hsl(206deg, 26%, 95%);
-  min-height: 20vh;
+  min-height: 10vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer-logo {
@@ -201,7 +201,8 @@ footer {
 }
 
 .footer-social {
-  margin-right: 2%;
+  margin-right: 2rem;
+  margin-left: 2rem;
   display: flex;
   gap: 1rem;
 }
