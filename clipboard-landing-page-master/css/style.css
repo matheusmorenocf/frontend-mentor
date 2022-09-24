@@ -147,6 +147,14 @@ button {
   background-color: hsl(233deg, 100%, 69%);
 }
 
+.attribution {
+  font-size: 0.7rem;
+  margin-bottom: 2rem;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
 footer {
   padding: 1rem 0;
   background-color: hsl(206deg, 26%, 95%);

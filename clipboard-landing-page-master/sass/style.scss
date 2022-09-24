@@ -145,7 +145,13 @@ button{
     background-color: $color-2;
   }
 }
-
+.attribution { 
+  font-size: .7rem; 
+  margin-bottom: 2rem;
+  a { 
+    color: $color-5 ; 
+  }
+}
 
 footer{
   padding: 1rem 0;
