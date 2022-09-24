@@ -274,6 +274,10 @@ footer {
   }
 }
 @media (max-width: 425px) {
+  header {
+    background: url("../images/bg-header-mobile.png") center no-repeat;
+    background-size: cover;
+  }
   .center {
     padding: 0 1rem;
   }
