@@ -131,9 +131,12 @@ button{
   width: 12rem;
   padding: .8rem 0;
   border-radius: 23px;
-  color: white;
   cursor: pointer;
   font-weight: 600;
+  a{
+    text-decoration: none;
+    color: white;
+  }
 }
 .button{
   padding: 2rem 0;
