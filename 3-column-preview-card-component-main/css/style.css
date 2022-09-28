@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 2rem;
+}
+
+.container-card {
+  max-width: 42rem;
+  height: auto;
+  display: flex;
+  border-radius: 3rem;
+}
+
+.card:nth-child(1) {
+  background-color: hsl(31deg, 77%, 52%);
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.card:nth-child(1) .button {
+  color: hsl(31deg, 77%, 52%);
+}
+.card:nth-child(1) .button:hover {
+  background-color: hsl(31deg, 77%, 52%);
+  color: hsl(0deg, 0%, 95%);
+  border: 2px solid hsl(0deg, 0%, 95%);
+}
+
+.card:nth-child(2) {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.card:nth-child(2) .button {
+  color: hsl(184deg, 100%, 22%);
+}
+.card:nth-child(2) .button:hover {
+  background-color: hsl(184deg, 100%, 22%);
+  color: hsl(0deg, 0%, 95%);
+  border: 2px solid hsl(0deg, 0%, 95%);
+}
+
+.card:nth-child(3) {
+  background-color: hsl(179deg, 100%, 13%);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.card:nth-child(3) .button {
+  color: hsl(179deg, 100%, 13%);
+}
+.card:nth-child(3) .button:hover {
+  background-color: hsl(179deg, 100%, 13%);
+  color: hsl(0deg, 0%, 95%);
+  border: 2px solid hsl(0deg, 0%, 95%);
+}
+
+.card {
+  width: 80%;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+}
+.card img {
+  width: 3.5rem;
+}
+.card .title-card {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 95%);
+}
+.card .text-card {
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+}
+.card .button {
+  margin-top: 2rem;
+  text-decoration: none;
+  background-color: hsl(0deg, 0%, 95%);
+  width: 6rem;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  border: 2px solid transparent;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: ease-in 0.2s;
+}
+
+.attribution {
+  min-height: 5rem;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+}
+
+@media (max-width: 695px) {
+  .container-card {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+  }
+  .card:nth-child(1) {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .card:nth-child(3) {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  .card .title-card {
+    font-size: 2.2rem;
+  }
+  .card .text-card {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .card .button {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

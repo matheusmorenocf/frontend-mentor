@@ -1,0 +1,135 @@
+$color-1: hsl(31, 77%, 52%);
+$color-2: hsl(184, 100%, 22%);
+$color-3: hsl(179, 100%, 13%);
+$color-hover-1: hsla(0, 0%, 100%, 0.75);
+$color-hover-2: hsl(0, 0%, 95%);
+$font-text:'Lexend Deca', sans-serif;
+$font-title:'Big Shoulders Display', cursive;
+
+*{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 2rem;
+}
+.container-card{
+  max-width: 42rem;
+  height: auto;
+  display: flex;
+  border-radius: 3rem;
+}
+.card:nth-child(1){
+  background-color: $color-1;
+  border-radius: .5rem 0 0 .5rem;
+  .button{
+    color: $color-1;
+    &:hover{
+      background-color: $color-1;
+      color: $color-hover-2;
+      border:  2px solid $color-hover-2;
+    }
+  }
+}
+.card:nth-child(2){
+  background-color: $color-2;
+  .button{
+    color: $color-2;
+    &:hover{
+      background-color: $color-2;
+      color: $color-hover-2;
+      border:  2px solid $color-hover-2;
+    }
+  }
+}
+.card:nth-child(3){
+  background-color: $color-3;
+  border-radius: 0 .5rem .5rem 0;
+  .button{
+    color: $color-3;
+    &:hover{
+      background-color: $color-3;
+      color: $color-hover-2;
+      border:  2px solid $color-hover-2;
+    }
+  }
+}
+.card{
+  width: 80%;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: $color-hover-1;
+  font-family: $font-text;
+  img{
+    width: 3.5rem;
+  }
+  .title-card{
+    font-family: $font-title;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $color-hover-2;
+  }
+  .text-card{
+    font-size: .7rem;
+    line-height: 1.3rem;
+  }
+  .button{
+    margin-top: 2rem;
+    text-decoration: none;
+    background-color: $color-hover-2;
+    width: 6rem;
+    padding: .5rem .5rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    border:  2px solid transparent;
+    font-size: .8rem;
+    font-weight: 600;
+    transition: ease-in .2s;
+  }
+}
+.attribution{
+  min-height: 5rem;
+  text-align: center;
+  a{
+    text-decoration: none;
+  }
+}
+@media (max-width: 695px){
+  .container-card{
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+  }
+  .card:nth-child(1){
+    border-radius: .5rem .5rem 0 0;
+  }
+  .card:nth-child(3){
+    border-radius: .0 0 .5rem .5rem;
+  }
+  .card{
+    .title-card{
+      font-size: 2.2rem;
+    }
+    .text-card{
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    .button{
+      margin-top: 0;
+    }
+  }
+
+}
