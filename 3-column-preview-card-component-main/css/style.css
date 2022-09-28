@@ -31,22 +31,12 @@ body {
 .card:nth-child(1) .button {
   color: hsl(31deg, 77%, 52%);
 }
-.card:nth-child(1) .button:hover {
-  background-color: hsl(31deg, 77%, 52%);
-  color: hsl(0deg, 0%, 95%);
-  border: 2px solid hsl(0deg, 0%, 95%);
-}
 
 .card:nth-child(2) {
   background-color: hsl(184deg, 100%, 22%);
 }
 .card:nth-child(2) .button {
   color: hsl(184deg, 100%, 22%);
-}
-.card:nth-child(2) .button:hover {
-  background-color: hsl(184deg, 100%, 22%);
-  color: hsl(0deg, 0%, 95%);
-  border: 2px solid hsl(0deg, 0%, 95%);
 }
 
 .card:nth-child(3) {
@@ -55,11 +45,6 @@ body {
 }
 .card:nth-child(3) .button {
   color: hsl(179deg, 100%, 13%);
-}
-.card:nth-child(3) .button:hover {
-  background-color: hsl(179deg, 100%, 13%);
-  color: hsl(0deg, 0%, 95%);
-  border: 2px solid hsl(0deg, 0%, 95%);
 }
 
 .card {
@@ -106,6 +91,23 @@ body {
   text-decoration: none;
 }
 
+@media (min-width: 795px) {
+  .card:nth-child(1) .button:hover {
+    background-color: hsl(31deg, 77%, 52%);
+    color: hsl(0deg, 0%, 95%);
+    border: 2px solid hsl(0deg, 0%, 95%);
+  }
+  .card:nth-child(2) .button:hover {
+    background-color: hsl(184deg, 100%, 22%);
+    color: hsl(0deg, 0%, 95%);
+    border: 2px solid hsl(0deg, 0%, 95%);
+  }
+  .card:nth-child(3) .button:hover {
+    background-color: hsl(179deg, 100%, 13%);
+    color: hsl(0deg, 0%, 95%);
+    border: 2px solid hsl(0deg, 0%, 95%);
+  }
+}
 @media (max-width: 695px) {
   .container-card {
     margin-top: 5rem;

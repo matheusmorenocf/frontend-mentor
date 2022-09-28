@@ -34,22 +34,12 @@ body{
   border-radius: .5rem 0 0 .5rem;
   .button{
     color: $color-1;
-    &:hover{
-      background-color: $color-1;
-      color: $color-hover-2;
-      border:  2px solid $color-hover-2;
-    }
   }
 }
 .card:nth-child(2){
   background-color: $color-2;
   .button{
     color: $color-2;
-    &:hover{
-      background-color: $color-2;
-      color: $color-hover-2;
-      border:  2px solid $color-hover-2;
-    }
   }
 }
 .card:nth-child(3){
@@ -57,11 +47,6 @@ body{
   border-radius: 0 .5rem .5rem 0;
   .button{
     color: $color-3;
-    &:hover{
-      background-color: $color-3;
-      color: $color-hover-2;
-      border:  2px solid $color-hover-2;
-    }
   }
 }
 .card{
@@ -104,6 +89,37 @@ body{
   text-align: center;
   a{
     text-decoration: none;
+  }
+}
+
+@media (min-width: 795px){
+  .card:nth-child(1){
+
+    .button{
+      &:hover{
+        background-color: $color-1;
+        color: $color-hover-2;
+        border:  2px solid $color-hover-2;
+      }
+    }
+  }
+  .card:nth-child(2){
+    .button{
+      &:hover{
+        background-color: $color-2;
+        color: $color-hover-2;
+        border:  2px solid $color-hover-2;
+      }
+    }
+  }
+  .card:nth-child(3){
+    .button{
+      &:hover{
+        background-color: $color-3;
+        color: $color-hover-2;
+        border:  2px solid $color-hover-2;
+      }
+    }
   }
 }
 @media (max-width: 695px){
