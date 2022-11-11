@@ -84,7 +84,7 @@ main{
 }
 .title{
   min-height: 55em;
-  background: url('/images/desktop/image-header.jpg') bottom no-repeat;
+  background: url('../images/desktop/image-header.jpg') bottom no-repeat;
   background-size: cover;
   text-align: center;
 }
