@@ -139,10 +139,11 @@ input[type=number]::-webkit-inner-spin-button {
 #resetBtn {
   background-color: #26c0ab;
   color: hsl(183deg, 100%, 15%);
+  opacity: 10%;
 }
 
 #resetBtn:active {
-  opacity: 10%;
+  opacity: 100%;
 }
 
 #custonButton {

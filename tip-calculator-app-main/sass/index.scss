@@ -127,9 +127,10 @@ input[type=number]::-webkit-inner-spin-button {
 #resetBtn{
   background-color: $color-1;
   color: $color-2;
+  opacity: 10%;
 }
 #resetBtn:active{
-  opacity: 10%;
+  opacity: 100%;
 }
 #custonButton{
   background-color: $color-6;
