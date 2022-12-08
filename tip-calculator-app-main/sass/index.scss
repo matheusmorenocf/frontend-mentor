@@ -17,6 +17,7 @@ $color-7: hsl(0, 0%, 100%);
 }
 #container{
   min-height: 100vh;
+  width: 100vw;
   background-color: $color-5;
   display: flex;
   flex-direction: column;
@@ -37,7 +38,7 @@ header h1{
 main{
   background: $color-7;
   border-radius: 1.5rem;
-  width: 26.5625rem;
+  width: 23.4375rem;
 }
 main form{
   width: 100%;

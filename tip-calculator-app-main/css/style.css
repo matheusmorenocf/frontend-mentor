@@ -10,6 +10,7 @@
 
 #container {
   min-height: 100vh;
+  width: 100vw;
   background-color: hsl(185deg, 41%, 84%);
   display: flex;
   flex-direction: column;
@@ -33,7 +34,7 @@ header h1 {
 main {
   background: hsl(0deg, 0%, 100%);
   border-radius: 1.5rem;
-  width: 26.5625rem;
+  width: 23.4375rem;
 }
 
 main form {
