@@ -1,0 +1,186 @@
+* {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+#container {
+  min-height: 100vh;
+  background-color: hsl(185deg, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  width: 6rem;
+  overflow-wrap: break-word;
+  color: hsl(183deg, 100%, 15%);
+  font-size: 1.5rem;
+}
+
+main {
+  background: hsl(0deg, 0%, 100%);
+  border-radius: 1.5rem;
+  width: 26.5625rem;
+}
+
+main form {
+  width: 100%;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+#leftSide, #rightSide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#rightSide {
+  background-color: hsl(183deg, 100%, 15%);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+}
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lines {
+  margin-bottom: 1.5rem;
+}
+
+.mTitles {
+  margin-bottom: 0.5rem;
+  color: hsl(186deg, 14%, 43%);
+  font-size: 1.1rem;
+}
+
+.image-container {
+  padding: 0.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-container {
+  height: 3.125rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: hsl(180deg, 33%, 97%);
+}
+
+.outlineOne:hover {
+  outline: 3px solid hsl(172deg, 67%, 45%);
+}
+
+input[type=number] {
+  width: 100%;
+  border: none;
+  background: none;
+  text-align: right;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: hsl(183deg, 100%, 15%);
+  cursor: pointer;
+}
+
+input[type=number]:focus {
+  outline: none;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 1.5rem;
+}
+
+input[type=button], input[type=reset] {
+  height: 3.125rem;
+  font-size: 1.5rem;
+  border: none;
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background: hsl(172deg, 67%, 45%);
+}
+
+#resetBtn {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+}
+
+#resetBtn:active {
+  opacity: 10%;
+}
+
+#custonButton {
+  background-color: hsl(180deg, 33%, 97%);
+  border-radius: 0.5rem;
+}
+
+.hiden {
+  color: red;
+  display: none;
+}
+
+.resultTitle {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.small {
+  opacity: 50%;
+  color: hsl(0deg, 0%, 100%);
+}
+
+#tipResult, #totalResult {
+  color: hsl(172deg, 67%, 45%);
+  font-size: 2.5rem;
+}
+
+@media (min-width: 720px) {
+  main {
+    width: 45rem;
+    height: 25rem;
+  }
+  main form {
+    grid-template-columns: repeat(1, 1fr 1fr);
+  }
+  .button-container {
+    grid-template-columns: repeat(3, 2fr);
+    gap: 1rem;
+  }
+  .lines {
+    margin-bottom: 1rem;
+  }
+  .input-container {
+    height: 40px;
+  }
+  input[type=button], input[type=reset] {
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

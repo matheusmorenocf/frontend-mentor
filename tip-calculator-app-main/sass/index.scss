@@ -1,0 +1,167 @@
+$color-1: hsl(172, 67%, 45%);
+$color-2: hsl(183, 100%, 15%);
+$color-3: hsl(186, 14%, 43%);
+$color-4: hsl(184, 14%, 56%);
+$color-5: hsl(185, 41%, 84%);
+$color-6: hsl(180, 33%, 97%);
+$color-7: hsl(0, 0%, 100%);
+
+*{
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+	vertical-align: baseline;
+}
+#container{
+  min-height: 100vh;
+  background-color: $color-5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header{
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+header h1{
+  width: 6rem;
+  overflow-wrap: break-word;
+  color: $color-2;
+  font-size: 1.5rem;
+}
+main{
+  background: $color-7;
+  border-radius: 1.5rem;
+  width: 26.5625rem;
+}
+main form{
+  width: 100%;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+#leftSide, #rightSide{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+#rightSide{
+  background-color: $color-2;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem ;
+}
+.titles{
+  display: flex;
+  justify-content: space-between;
+}
+.lines{
+  margin-bottom: 1.5rem;
+}
+.mTitles{
+  margin-bottom: .5rem;
+  color: $color-3;
+  font-size: 1.1rem;
+}
+.image-container{
+  padding: .5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-container{
+  height: 3.125rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  background-color: $color-6;
+}
+.outlineOne:hover{
+  outline: 3px solid $color-1;
+}
+input[type="number"]{
+  width: 100%;
+  border: none;
+  background: none;
+  text-align: right;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: $color-2;
+  cursor: pointer;
+}
+input[type="number"]:focus{
+  outline: none;
+}
+.button-container{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 1.5rem;
+}
+input[type="button"], input[type="reset"]{
+  height: 3.125rem;
+  font-size: 1.5rem;
+  border: none;
+  background-color: $color-2;
+  color: $color-7;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+input[type="button"]:hover{
+  background: $color-1;
+}
+#resetBtn{
+  background-color: $color-1;
+  color: $color-2;
+}
+#resetBtn:active{
+  opacity: 10%;
+}
+#custonButton{
+  background-color: $color-6;
+  border-radius: .5rem;
+}
+.hiden{
+  color: red;
+  display: none;
+}
+.resultTitle{
+  color: $color-7;
+}
+.small{
+  opacity: 50%;
+  color: $color-7;
+}
+#tipResult, #totalResult{
+  color: $color-1;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 720px){
+  main{
+    width: 45rem;
+    height: 25rem;
+  }
+  main form{
+    grid-template-columns: repeat(1, 1fr 1fr);
+  }
+  .button-container{
+    grid-template-columns: repeat(3, 2fr);
+    gap: 1rem;
+  }
+  .lines{
+    margin-bottom: 1rem;
+  }
+  .input-container{
+    height: 40px;
+  }
+  input[type="button"], input[type="reset"]{
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+}
