@@ -49,6 +49,8 @@ tipBtn.forEach((element)=>{
         return
       }
       removeError()
+      tipBtn.forEach((element)=> element.classList.remove('active'))
+      element.classList.add('active')
       const tip = element.value.slice(0, element.value.length-1) 
       inputResult(inputBill.value, tip, inputNumPeople.value)
     })
@@ -59,6 +61,7 @@ tipBtn.forEach((element)=>{
         return
       }
       removeError()
+      tipBtn.forEach((element)=> element.classList.remove('active'))
       const tip = element.value
       inputResult(inputBill.value, tip, inputNumPeople.value)
     })
