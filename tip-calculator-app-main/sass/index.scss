@@ -1,4 +1,4 @@
-$color-1: hsl(172, 67%, 45%);
+$color-1: #26c0ab;
 $color-2: hsl(183, 100%, 15%);
 $color-3: hsl(186, 14%, 43%);
 $color-4: hsl(184, 14%, 56%);
@@ -42,7 +42,7 @@ main{
 }
 main form{
   width: 100%;
-  padding: 1.5rem;
+  padding: 2rem;
   display: grid;
   gap: 1.5rem;
 }
@@ -56,7 +56,7 @@ main form{
 #rightSide{
   background-color: $color-2;
   border-radius: 1rem;
-  padding: 2rem 1.5rem ;
+  padding: 2.5rem 1.5rem ;
 }
 .titles{
   display: flex;
@@ -99,12 +99,18 @@ input[type="number"]{
 input[type="number"]:focus{
   outline: none;
 }
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: $color-4;
+}
 .button-container{
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   gap: 1.5rem;
 }
-input[type="button"], input[type="reset"]{
+.tipButton, input[type="reset"]{
   height: 3.125rem;
   font-size: 1.5rem;
   border: none;
@@ -113,8 +119,10 @@ input[type="button"], input[type="reset"]{
   border-radius: .4rem;
   cursor: pointer;
 }
-input[type="button"]:hover{
+.tipButton:hover{
+  color: $color-2;
   background: $color-1;
+
 }
 #resetBtn{
   background-color: $color-1;
@@ -128,7 +136,6 @@ input[type="button"]:hover{
   border-radius: .5rem;
 }
 .hiden{
-  color: red;
   display: none;
 }
 .resultTitle{
@@ -142,18 +149,34 @@ input[type="button"]:hover{
   color: $color-1;
   font-size: 2.5rem;
 }
+#error{
+  color: red;
+}
+.errorOutline{
+  outline: 3px solid red;
+}
+.active{
+  background-color: #26c0ab;
+}
 
-@media (min-width: 720px){
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 768px){
+  header{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
   main{
-    width: 45rem;
-    height: 25rem;
+    width: 48rem;
+    height: auto;
   }
   main form{
     grid-template-columns: repeat(1, 1fr 1fr);
   }
   .button-container{
     grid-template-columns: repeat(3, 2fr);
-    gap: 1rem;
+    gap: .8rem;
   }
   .lines{
     margin-bottom: 1rem;
@@ -161,8 +184,18 @@ input[type="button"]:hover{
   .input-container{
     height: 40px;
   }
-  input[type="button"], input[type="reset"]{
+  input[type="button"], input[type="reset"], input[type="number"]{
     height: 2.5rem;
     font-size: 1.2rem;
   }
+  .resultTitle{
+    font-size: .9rem;
+  }
+  .small{
+    font-size: .7rem;
+  }
+  .mTitles{
+    font-size: 1rem;
+  }
+
 }

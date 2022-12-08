@@ -7,10 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Tip calculator app</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="index.js" defer></script>
 </head>
 <body>
 
@@ -29,17 +26,17 @@
               <div class="image-container">
                 <img src="images/icon-dollar.svg">
               </div>
-              <input type="number" id="inputBill"></div>
+              <input type="number" id="inputBill" placeholder="0" required></div>
           </div>
           <div class="tip-container lines">
             <h2 class="mTitles">Select Tip %</h2>
             <div class="button-container">
-              <input type="button" value="5%">
-              <input type="button" value="10%">
-              <input type="button" value="15%">
-              <input type="button" value="25%">
-              <input type="button" value="50%">
-              <input type="number" value="Custom" id="custonButton" class="outlineOne" placeholder="Custom">
+              <input type="button" value="5%" class="tipButton">
+              <input type="button" value="10%" class="tipButton">
+              <input type="button" value="15%" class="tipButton">
+              <input type="button" value="25%" class="tipButton">
+              <input type="button" value="50%" class="tipButton">
+              <input type="number" id="custonButton" class="outlineOne tipButton" placeholder="Custom" >
             </div>
           </div>
           <div class="lines">
@@ -47,11 +44,11 @@
               <label for="inputNumPeople">Number of People</label>
               <span id="error" class="hiden">Can't be zero</span>
             </div>
-            <div class="input-container outlineOne titles"> 
+            <div class="input-container outlineOne titles" id="error-2"> 
               <div class="image-container">
                 <img src="images/icon-person.svg">
               </div>
-              <input type="number" id="inputNumPeople"></div>
+              <input type="number" id="inputNumPeople" placeholder="0" required></div>
           </div>
         </section>
         <section id="rightSide">
@@ -61,14 +58,14 @@
                 <h3 class="resultTitle">Tip Amount</h3>
                 <span class="small">/ person</span>
               </div>
-              <h3 id="tipResult">$0.00</h3>
+              <h3 id="tipResult"></h3>
             </div>
             <div class="totalContainer titles lines">
               <div>
                 <h3 class="resultTitle">Total</h3>
                 <span class="small">/ person</span>
               </div>
-              <h3 id="totalResult">$0.00</h3>
+              <h3 id="totalResult"></h3>
             </div>
           </div>
           <input type="reset" value="RESET" id="resetBtn"></input>

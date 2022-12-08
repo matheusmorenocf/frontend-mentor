@@ -39,7 +39,7 @@ main {
 
 main form {
   width: 100%;
-  padding: 1.5rem;
+  padding: 2rem;
   display: grid;
   gap: 1.5rem;
 }
@@ -55,7 +55,7 @@ main form {
 #rightSide {
   background-color: hsl(183deg, 100%, 15%);
   border-radius: 1rem;
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 1.5rem;
 }
 
 .titles {
@@ -89,7 +89,7 @@ main form {
 }
 
 .outlineOne:hover {
-  outline: 3px solid hsl(172deg, 67%, 45%);
+  outline: 3px solid #26c0ab;
 }
 
 input[type=number] {
@@ -107,13 +107,21 @@ input[type=number]:focus {
   outline: none;
 }
 
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: hsl(184deg, 14%, 56%);
+}
+
 .button-container {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   gap: 1.5rem;
 }
 
-input[type=button], input[type=reset] {
+.tipButton, input[type=reset] {
   height: 3.125rem;
   font-size: 1.5rem;
   border: none;
@@ -123,12 +131,13 @@ input[type=button], input[type=reset] {
   cursor: pointer;
 }
 
-input[type=button]:hover {
-  background: hsl(172deg, 67%, 45%);
+.tipButton:hover {
+  color: hsl(183deg, 100%, 15%);
+  background: #26c0ab;
 }
 
 #resetBtn {
-  background-color: hsl(172deg, 67%, 45%);
+  background-color: #26c0ab;
   color: hsl(183deg, 100%, 15%);
 }
 
@@ -142,7 +151,6 @@ input[type=button]:hover {
 }
 
 .hiden {
-  color: red;
   display: none;
 }
 
@@ -156,21 +164,46 @@ input[type=button]:hover {
 }
 
 #tipResult, #totalResult {
-  color: hsl(172deg, 67%, 45%);
+  color: #26c0ab;
   font-size: 2.5rem;
 }
 
-@media (min-width: 720px) {
+#error {
+  color: red;
+}
+
+.errorOutline {
+  outline: 3px solid red;
+}
+
+.active {
+  background-color: #26c0ab;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  header {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
   main {
-    width: 45rem;
-    height: 25rem;
+    width: 48rem;
+    height: auto;
   }
   main form {
     grid-template-columns: repeat(1, 1fr 1fr);
   }
   .button-container {
     grid-template-columns: repeat(3, 2fr);
-    gap: 1rem;
+    gap: 0.8rem;
   }
   .lines {
     margin-bottom: 1rem;
@@ -178,9 +211,18 @@ input[type=button]:hover {
   .input-container {
     height: 40px;
   }
-  input[type=button], input[type=reset] {
+  input[type=button], input[type=reset], input[type=number] {
     height: 2.5rem;
     font-size: 1.2rem;
+  }
+  .resultTitle {
+    font-size: 0.9rem;
+  }
+  .small {
+    font-size: 0.7rem;
+  }
+  .mTitles {
+    font-size: 1rem;
   }
 }
 
