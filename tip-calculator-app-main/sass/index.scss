@@ -102,7 +102,7 @@ input[type="number"]:focus{
 input[type=number]::-webkit-inner-spin-button { 
   -webkit-appearance: none;
 }
-::-webkit-input-placeholder { /* WebKit browsers */
+::-webkit-input-placeholder {
   color: $color-4;
 }
 .button-container{
