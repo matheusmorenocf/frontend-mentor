@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-size: 100%;
   vertical-align: baseline;
-  transition: 0.3s;
+  transition: 0.3s ease-in;
 }
 
 body {
@@ -23,19 +23,35 @@ header {
   margin: auto;
   margin-bottom: 0.5em;
   padding: 3.5em 0em 2em 0em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 nav {
   display: flex;
-  gap: 2em;
+  justify-content: space-between;
 }
-nav a {
+nav ul {
+  display: flex;
+  gap: 2em;
+  list-style-type: none;
+}
+nav ul li {
+  letter-spacing: 0.1em;
+}
+nav ul li a {
   color: hsl(236deg, 13%, 42%);
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 700;
+}
+
+.mobilie-menu {
+  display: none;
+  cursor: pointer;
+}
+.mobilie-menu div {
+  width: 2.5em;
+  height: 0.25em;
+  background-color: black;
+  margin: 0.5rem;
 }
 
 main {
@@ -69,6 +85,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 2rem;
 }
 .title-content div p {
   color: hsl(236deg, 13%, 42%);
@@ -184,6 +201,15 @@ main {
     color: hsl(5deg, 85%, 63%);
   }
 }
+@media (max-width: 1285px) {
+  .bottom-section {
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  .bottom-section div {
+    width: 45%;
+  }
+}
 @media (max-width: 1024px) {
   header {
     width: 75%;
@@ -193,17 +219,30 @@ main {
     grid-template-areas: "item-1 item-1 item-1" "item-2 item-2 item-2" "item-3 item-3 item-3";
     gap: 2rem;
   }
-  .bottom-section {
-    flex-wrap: wrap;
-    gap: 2em;
-  }
   .bottom-section div {
-    width: 45%;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
-  nav {
-    display: none;
+  body {
+    overflow-x: hidden;
+  }
+  nav ul {
+    position: absolute;
+    top: 18vh;
+    right: 0;
+    width: 60vw;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    padding: 5em 0em 0em 2em;
+    transform: translateX(100%);
+  }
+  nav.active ul {
+    transform: translateX(0%);
+  }
+  .mobilie-menu {
+    display: block;
   }
   .title-content {
     flex-direction: column;
@@ -215,9 +254,6 @@ main {
   .title-content div {
     width: 100%;
     gap: 1.5em;
-  }
-  .bottom-section div {
-    width: 100%;
   }
 }
 @media (max-width: 420px) {

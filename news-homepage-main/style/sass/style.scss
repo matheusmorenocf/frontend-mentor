@@ -13,7 +13,7 @@ $Very-dark-blue: hsl(240, 100%, 5%);
   box-sizing: border-box;
   font-size: 100%;
 	vertical-align: baseline;
-  transition: .3s;
+  transition: .3s ease-in;
 }
 body{
   width: 100vw;
@@ -27,17 +27,32 @@ header{
   margin: auto;
   margin-bottom: .5em;
   padding: 3.5em 0em 2em 0em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 nav{
   display: flex;
-  gap: 2em;
-  a {
-    color: $Dark-grayish-blue;
-    font-size: 1.1em;
-    font-weight: 700;
+  justify-content: space-between;
+  ul{
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+    li{
+      letter-spacing: .1em;
+      a {
+        color: $Dark-grayish-blue;
+        font-size: 1.3em;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.mobilie-menu{
+  display: none;
+  cursor: pointer;
+  div{
+    width: 2.5em;
+    height: .25em;
+    background-color: black;
+    margin: .5rem;
   }
 }
 main{
@@ -71,6 +86,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 2rem;
     p{
       color: $Dark-grayish-blue;
       line-height: 1.6em;
@@ -202,7 +218,15 @@ main{
     }
   }
 }
-
+@media (max-width: 1285px){
+  .bottom-section{
+    flex-wrap: wrap;
+    gap: 2em;
+    div{
+      width:45%;
+    }
+  }
+}
 @media (max-width: 1024px) {
   header{
     width: 75%;
@@ -216,16 +240,38 @@ main{
     gap: 2rem;
   }
   .bottom-section{
-    flex-wrap: wrap;
-    gap: 2em;
     div{
-      width: 45%;
+      width: 100%;
     }
   }
 }
 @media (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
   nav{
-    display: none;
+    ul{
+      position: absolute;
+      top: 18vh;
+      right: 0;
+      width: 60vw;
+      height: 100vh;
+      background-color: white;
+      flex-direction: column;
+      padding: 5em 0em 0em 2em;
+      transform: translateX(100%);
+      li{
+
+      }
+    }
+  }
+  nav.active{
+    ul{
+      transform: translateX(0%);
+    }
+  }
+  .mobilie-menu{
+    display: block;
   }
   .title-content{
     flex-direction: column;
@@ -238,17 +284,11 @@ main{
       gap: 1.5em;
     }
   }
-  .bottom-section{
-    div{
-      width: 100%;
-    }
-  }
 }
 
 @media (max-width: 420px){
   header{
     width: 95%;
-
   }
   main{
     width: 95%;
