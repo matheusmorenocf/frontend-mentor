@@ -198,13 +198,13 @@ main {
     color: hsl(5deg, 85%, 63%);
   }
 }
-@media (max-width: 1285px) {
+@media (max-width: 1280px) {
   .bottom-section {
     flex-wrap: wrap;
     gap: 2em;
   }
   .bottom-section div {
-    width: 45%;
+    width: 100%;
   }
 }
 @media (max-width: 1024px) {

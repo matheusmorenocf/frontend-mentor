@@ -218,12 +218,12 @@ main{
     }
   }
 }
-@media (max-width: 1285px){
+@media (max-width: 1280px){
   .bottom-section{
     flex-wrap: wrap;
     gap: 2em;
     div{
-      width:45%;
+      width:100%;
     }
   }
 }
