@@ -34,13 +34,9 @@ nav ul {
   gap: 2em;
   list-style-type: none;
 }
-nav ul li {
-  letter-spacing: 0.1em;
-}
 nav ul li a {
   color: hsl(236deg, 13%, 42%);
-  font-size: 1.3em;
-  font-weight: 700;
+  font-size: 1.1em;
 }
 
 .mobilie-menu {
