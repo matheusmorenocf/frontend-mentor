@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-size: 100%;
   vertical-align: baseline;
+  transition: 0.3s;
 }
 
 body {
@@ -13,8 +14,12 @@ body {
   min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
-  width: 75%;
+  width: 85%;
   margin: auto;
   margin-bottom: 0.5em;
   padding: 3.5em 0em 2em 0em;
@@ -27,16 +32,14 @@ nav {
   display: flex;
   gap: 2em;
 }
-
-nav > a {
-  text-decoration: none;
+nav a {
   color: hsl(236deg, 13%, 42%);
   font-size: 1.1em;
   font-weight: 700;
 }
 
 main {
-  width: 75%;
+  width: 85%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -47,8 +50,7 @@ main {
 .title-container {
   grid-area: item-1;
 }
-
-.title-container > img {
+.title-container img {
   width: 100%;
   margin-bottom: 1.4em;
 }
@@ -57,29 +59,26 @@ main {
   display: flex;
   justify-content: space-between;
 }
-
-.title-content > h1 {
-  font-size: 3.2em;
+.title-content h1 {
+  font-size: 3.3em;
   font-weight: 800;
   width: 45%;
 }
-
-.title-content > div {
+.title-content div {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-.title-content > div > p {
+.title-content div p {
   color: hsl(236deg, 13%, 42%);
-  line-height: 1.5em;
+  line-height: 1.6em;
+  font-size: 1.1em;
 }
-
-.title-content > div > a {
+.title-content div a {
+  display: block;
   background-color: hsl(5deg, 85%, 63%);
   text-transform: uppercase;
-  text-decoration: none;
   text-align: center;
   letter-spacing: 0.2em;
   width: max-content;
@@ -96,26 +95,28 @@ main {
   justify-content: space-between;
   padding: 2em;
 }
-
-.news > h2 {
+.news h2 {
   color: hsl(35deg, 77%, 62%);
   font-size: 2.5em;
   font-weight: 700;
+  margin-bottom: 0.5em;
 }
-
-.news > div > h3 {
+.news div a {
+  display: block;
   color: hsl(36deg, 100%, 99%);
   font-weight: 700;
   font-size: 1.3em;
+  margin-top: 0.5em;
   margin-bottom: 0.8em;
 }
-
-.news > div > p {
+.news div p {
   color: hsl(236deg, 13%, 42%);
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
 }
-
-hr {
+.news hr {
   border: 1px solid hsl(236deg, 13%, 42%);
+  margin-top: 1em;
 }
 
 .bottom-section {
@@ -123,41 +124,40 @@ hr {
   margin-top: 2em;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.bottom-section > div {
+.bottom-section div {
   display: flex;
-  width: 30%;
+  width: 32%;
   gap: 1em;
+  height: 8.5em;
 }
-
-.bottom-section > div > img {
-  height: 8em;
+.bottom-section div img {
+  height: 100%;
 }
-
-.bottom-section > div > div {
+.bottom-section div div {
   display: flex;
+  width: auto;
   flex-direction: column;
   justify-content: space-between;
 }
-
-.bottom-section > div > div > h4 {
+.bottom-section div div h4 {
   font-size: 2em;
   font-weight: 700;
   color: hsl(233deg, 8%, 79%);
 }
-
-.bottom-section > div > div > h5 {
+.bottom-section div div a {
+  display: block;
   font-size: 1.2em;
   font-weight: 700;
   color: hsl(240deg, 100%, 5%);
 }
-
-.bottom-section > div > div > p {
+.bottom-section div div p {
   color: hsl(236deg, 13%, 42%);
   line-height: 1.5em;
   font-size: 0.95em;
+  margin-bottom: 1em;
 }
 
 .attribution {
@@ -168,6 +168,65 @@ hr {
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 720px) {
+  nav a:hover {
+    color: hsl(35deg, 77%, 62%);
+  }
+  .title-content div a:hover {
+    background-color: hsl(240deg, 100%, 5%);
+  }
+  .news div a:hover {
+    color: hsl(35deg, 77%, 62%);
+  }
+  .bottom-section div div a:hover {
+    color: hsl(5deg, 85%, 63%);
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    width: 75%;
+  }
+  main {
+    width: 75%;
+    grid-template-areas: "item-1 item-1 item-1" "item-2 item-2 item-2" "item-3 item-3 item-3";
+    gap: 2rem;
+  }
+  .bottom-section {
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  .bottom-section div {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .title-content {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  .title-content h1 {
+    width: 100%;
+  }
+  .title-content div {
+    width: 100%;
+    gap: 1.5em;
+  }
+  .bottom-section div {
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  header {
+    width: 95%;
+  }
+  main {
+    width: 95%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

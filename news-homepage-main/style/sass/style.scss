@@ -13,13 +13,17 @@ $Very-dark-blue: hsl(240, 100%, 5%);
   box-sizing: border-box;
   font-size: 100%;
 	vertical-align: baseline;
+  transition: .3s;
 }
 body{
   width: 100vw;
   min-height: 100vh;
 }
+a{
+  text-decoration: none;
+}
 header{
-  width: 75%;
+  width: 85%;
   margin: auto;
   margin-bottom: .5em;
   padding: 3.5em 0em 2em 0em;
@@ -30,16 +34,14 @@ header{
 nav{
   display: flex;
   gap: 2em;
-  
-}
-nav > a {
-  text-decoration: none;
-  color: $Dark-grayish-blue;
-  font-size: 1.1em;
-  font-weight: 700;
+  a {
+    color: $Dark-grayish-blue;
+    font-size: 1.1em;
+    font-weight: 700;
+  }
 }
 main{
-  width: 75%;
+  width: 85%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr) ;
@@ -51,41 +53,41 @@ main{
 }
 .title-container{
   grid-area: item-1;
-}
-.title-container > img{
-  width: 100%;
-  margin-bottom: 1.4em;
+  img{
+    width: 100%;
+    margin-bottom: 1.4em;
+  }
 }
 .title-content{
   display: flex;
   justify-content: space-between;
-
-}
-.title-content > h1{
-  font-size: 3.2em;
-  font-weight: 800;
-  width: 45%;
-}
-.title-content > div{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.title-content > div > p{
- color: $Dark-grayish-blue;
- line-height: 1.5em;
-}
-.title-content > div > a{
-  background-color: $Soft-red;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  letter-spacing: .2em;
-  width: max-content;
-  color: white;
-  padding: 1em 2em;
-  font-weight: 700;
+  h1{
+    font-size: 3.3em;
+    font-weight: 800;
+    width: 45%;
+  }
+  div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p{
+      color: $Dark-grayish-blue;
+      line-height: 1.6em;
+      font-size: 1.1em;
+     }
+    a{
+      display: block;
+      background-color: $Soft-red;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: .2em;
+      width: max-content;
+      color: white;
+      padding: 1em 2em;
+      font-weight: 700;
+  }
+  }
 }
 .news{
   grid-area: item-2;
@@ -94,70 +96,161 @@ main{
   flex-direction: column;
   justify-content: space-between;
   padding: 2em;
-}
-
-.news > h2{
-  color: $Soft-orange;
-  font-size: 2.5em;
-  font-weight: 700;
-}
-.news > div > h3{
-  color: $Off-white;
-  font-weight: 700;
-  font-size: 1.3em;
-  margin-bottom: .8em;
-}
-.news > div > p{
-  color: $Dark-grayish-blue;
-}
-hr{
-  border: 1px solid $Dark-grayish-blue;
+  h2{
+    color: $Soft-orange;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: .5em;
+  }
+  div{
+    a{
+      display: block;
+      color: $Off-white;
+      font-weight: 700;
+      font-size: 1.3em;
+      margin-top: .5em;
+      margin-bottom: .8em;
+    }
+    p{
+      color: $Dark-grayish-blue;
+      margin-bottom: .5em;
+      font-size: 1.1em;
+    }
+  }
+  hr{
+    border: 1px solid $Dark-grayish-blue;
+    margin-top: 1em;
+  }
 }
 .bottom-section{
   grid-area: item-3;
   margin-top: 2em;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-}
-.bottom-section > div{
-  display: flex;
-  width: 30%;
-  gap: 1em;
-}
+  div{
+    display: flex;
+    width: 32%;
+    gap: 1em;
+    height: 8.5em;
+    img{
+      height: 100%;
+    }
+    div{
+      display: flex;
+      width: auto;
+      flex-direction: column;
+      justify-content: space-between;
+      h4{
+        font-size: 2em;
+        font-weight: 700;
+        color: $Grayish-blue;
+      }
+      a{
+        display: block;
+        font-size: 1.2em;
+        font-weight: 700;
+        color: $Very-dark-blue;
+      }
+      p{
+        color: $Dark-grayish-blue;
+        line-height: 1.5em;
+        font-size: .95em;
+        margin-bottom: 1em;
+      }
+    }
+  }
 
-.bottom-section > div > img{
-  height: 8em;
 }
-
-.bottom-section > div > div{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.bottom-section > div > div > h4{
-  font-size: 2em;
-  font-weight: 700;
-  color: $Grayish-blue;
-}
-
-.bottom-section > div > div > h5{
-  font-size: 1.2em;
-  font-weight: 700;
-  color: $Very-dark-blue;
-}
-.bottom-section > div > div > p{
-  color: $Dark-grayish-blue;
-  line-height: 1.5em;
-  font-size: .95em;
-}
-
-
+ 
 .attribution { 
   margin-top: 2em;
   font-size: 11px; text-align: center; 
 }
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 720px) {
+  nav{
+    a:hover{
+      color: $Soft-orange;
+    }
+  }
+  .title-content{
+    div{
+      a:hover{
+        background-color: $Very-dark-blue;
+      }
+    }
+  }
+  .news{
+    div{
+    a:hover{
+      color: $Soft-orange;
+    }
+  }
+  }
+    .bottom-section{
+      div{
+        div{
+          a:hover{
+            color: $Soft-red;
+          }
+        }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  header{
+    width: 75%;
+  }
+  main{
+    width: 75%;
+    grid-template-areas: 
+    "item-1 item-1 item-1"
+    "item-2 item-2 item-2"
+    "item-3 item-3 item-3";
+    gap: 2rem;
+  }
+  .bottom-section{
+    flex-wrap: wrap;
+    gap: 2em;
+    div{
+      width: 45%;
+    }
+  }
+}
+@media (max-width: 768px){
+  nav{
+    display: none;
+  }
+  .title-content{
+    flex-direction: column;
+    gap: 1.5em;
+    h1{
+      width: 100%;
+    }
+    div{
+      width: 100%;
+      gap: 1.5em;
+    }
+  }
+  .bottom-section{
+    div{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 420px){
+  header{
+    width: 95%;
+
+  }
+  main{
+    width: 95%;
+  }
 }
