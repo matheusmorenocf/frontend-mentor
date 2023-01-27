@@ -35,6 +35,7 @@ nav{
     display: flex;
     gap: 2em;
     list-style-type: none;
+    align-items: center;
     li{
       a {
         color: $Dark-grayish-blue;
@@ -257,6 +258,7 @@ main{
       height: 100vh;
       background-color: white;
       flex-direction: column;
+      align-items: flex-start;
       padding: 5em 0em 0em 2em;
       transform: translateX(100%);
       li{
