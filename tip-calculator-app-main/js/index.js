@@ -7,7 +7,6 @@ const tipBtn = document.querySelectorAll('.tipButton')
 const custom = document.querySelector('#custonButton')
 const form = document.querySelector('form')
 
-
 const calcTip = (bill, tip, numPeople) =>{
   const tipAmount = bill * (tip/100)
   return (tipAmount / numPeople)
