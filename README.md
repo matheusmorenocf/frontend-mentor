@@ -1,4 +1,4 @@
-# fontend-mentor
+# frontend-mentor
 
 ![GitHub](https://img.shields.io/github/license/matheusmorenocf/mini-projetos?style=plastic)
 
