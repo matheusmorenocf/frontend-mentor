@@ -1,6 +1,6 @@
 # frontend-mentor
 
-![GitHub](https://img.shields.io/github/license/matheusmorenocf/mini-projetos?style=plastic)
+<div align="center"><img src="https://img.shields.io/github/license/matheusmorenocf/mini-projetos?style=plastic" alt="GitHub"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/matheusmorenocf/frontend-mentor?style=plastic"></div>
 
 # Sobre o repositorio
 
