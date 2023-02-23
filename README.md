@@ -14,6 +14,10 @@ Esta calculadora de gorjetas, nela voce consegue informar o valor total da conta
 
 <img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/tip-calculator-app-main.gif">
 
+### Responsividade
+
+<div align="center"><img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/tip-calculator-app-main-mobilie.gif"></div>
+
 Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/frontend-mentor/tip-calculator-app-main/index.html" target="_blank">AQUI!</a>
 
 ## Tecnologias Utilizadas
@@ -26,6 +30,11 @@ Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/frontend-mentor
 
 <img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/clipboard.gif">
 
+### Responsividade
+
+<div align="center"><img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/clipboard-mobilie.gif"></div>
+
+
 Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/frontend-mentor/clipboard-landing-page-master/index.html" target="_blank">AQUI!</a>
 
 ### Tecnologias Utilizadas
@@ -36,6 +45,10 @@ Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/frontend-mentor
 ## news-homepage-main
 
 <img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/new-home-page.gif">
+
+### Responsividade
+
+<div align="center"><img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/new-home-page-mobilie.gif"></div>
 
 Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/frontend-mentor/news-homepage-main/index.html" target="_blank">AQUI!</a>
 
