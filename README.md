@@ -42,21 +42,6 @@ Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/frontend-mentor
 - CSS3
 - SASS
 
-## news-homepage-main
-
-<img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/new-home-page.gif">
-
-### Responsividade
-
-<div align="center"><img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/new-home-page-mobilie.gif"></div>
-
-Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/frontend-mentor/news-homepage-main/index.html" target="_blank">AQUI!</a>
-
-### Tecnologias Utilizadas
-- HTML5
-- CSS3
-- SASS
-
 ## Product preview
 
 <img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/product-preview.gif">
