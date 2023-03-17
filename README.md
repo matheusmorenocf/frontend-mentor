@@ -46,7 +46,7 @@ Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/frontend-mentor
 
 <img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/product-preview.gif">
 
-Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/frontend-mentor/3-column-preview-card-component-main/index.html" target="_blank">AQUI!</a>
+Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/frontend-mentor/product-preview-card-component-main/index.html" target="_blank">AQUI!</a>
 
 ### Tecnologias Utilizadas
 - HTML5
