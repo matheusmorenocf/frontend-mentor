@@ -1,6 +1,6 @@
 # frontend-mentor
 
-<div align="center"><img src="https://img.shields.io/github/license/matheusmorenocf/mini-projetos?style=plastic" alt="GitHub"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/matheusmorenocf/frontend-mentor?style=plastic"></div>
+<div><img src="https://img.shields.io/github/license/matheusmorenocf/mini-projetos?style=plastic" alt="GitHub"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/matheusmorenocf/frontend-mentor?style=plastic"></div>
 
 # Sobre o repositorio
 
@@ -8,17 +8,28 @@ Este repositorio foi criado para alocar alguns desafios realizados do site <a hr
 
 Abaixo os desafios que mais gostei ate o momento
 
+## Interactive card details form main
+
+<img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/interactive-card-details-form-main-mobilie.gif">
+
+<a href="https://matheusmorenocf.github.io/frontend-mentor/interactive-card-details-form-main/index.html" target="_blank">VER AO VIVO</a>
+
+<a href="https://github.com/matheusmorenocf/frontend-mentor/tree/main/interactive-card-details-form-main" target="_blank">VER CÓDIGO</a>
+
+## Tecnologias Utilizadas
+- HTML5
+- CSS3
+- Javascript
+
 ## tip-calculator-app-main
 
 Esta calculadora de gorjetas, nela voce consegue informar o valor total da conta, quantas pessoas irão dividir e o percentual da gorjeta.
 
-<img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/tip-calculator-app-main.gif">
+<img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/tip-calculator-app-main-mobilie-unscreen.gif">
 
-### Responsividade
+<a href="https://matheusmorenocf.github.io/frontend-mentor/tip-calculator-app-main/index.html" target="_blank">VER AO VIVO!</a>
 
-<div align="center"><img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/tip-calculator-app-main-mobilie.gif"></div>
-
-Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/frontend-mentor/tip-calculator-app-main/index.html" target="_blank">AQUI!</a>
+<a href="https://github.com/matheusmorenocf/frontend-mentor/tree/main/tip-calculator-app-main" target="_blank">VER CÓDIGO</a>
 
 ## Tecnologias Utilizadas
 - HTML5
@@ -28,30 +39,17 @@ Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/frontend-mentor
 
 ## clipboard-landing-page-master
 
-<img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/clipboard.gif">
+<img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/clipboard-mobilie-unscreen.gif">
 
-### Responsividade
+<a href="https://matheusmorenocf.github.io/frontend-mentor/clipboard-landing-page-master/index.html" target="_blank">VER AO VIVO</a>
 
-<div align="center"><img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/clipboard-mobilie.gif"></div>
-
-
-Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/frontend-mentor/clipboard-landing-page-master/index.html" target="_blank">AQUI!</a>
+<a href="https://github.com/matheusmorenocf/frontend-mentor/tree/main/clipboard-landing-page-master" target="_blank">VER CÓDIGO</a>
 
 ### Tecnologias Utilizadas
 - HTML5
 - CSS3
 - SASS
 
-## Product preview
-
-<img src="https://github.com/matheusmorenocf/frontend-mentor/blob/main/assets/product-preview.gif">
-
-Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/frontend-mentor/product-preview-card-component-main/index.html" target="_blank">AQUI!</a>
-
-### Tecnologias Utilizadas
-- HTML5
-- CSS3
-- SASS
 
 Veja os outros desafios aqui:
 
