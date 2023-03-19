@@ -13,7 +13,7 @@ formatInput();
 const formCard = document.querySelector('.form-card');
 formCard.addEventListener('submit', (e) => {
   e.preventDefault();
-  if (verification(cardNumberInput ,cardMonthInput, cardYearInput)){
+  if (verification(cardNumberInput ,cardMonthInput, cardYearInput, cardCvcInput)){
     hiddenForm()
   }
 })
