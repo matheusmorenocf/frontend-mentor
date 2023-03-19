@@ -16,8 +16,6 @@ formCard.addEventListener('submit', (e) => {
   if (verification(cardNumberInput ,cardMonthInput, cardYearInput)){
     hiddenForm()
   }
-  
-
 })
 
 
@@ -42,9 +40,14 @@ function verification(number, month, year){
 function formatInput() {
   cardNumberInput.addEventListener('input', () =>{
     const cardNumber = document.querySelector('.cardNum');
-    const value = cardNumberInput.value.replace(/\D/g,'')
-    const formatValue = value.replace(/^(\d{4})(\d{4})(\d{4})(\d{4})$/, '$1 $2 $3 $4')
-    cardNumberInput.value = formatValue;
+    if(/^[\d\s]+$/.test(cardNumberInput.value)){
+      cardNumberInput.value = cardNumberInput.value.replace(/^(\d{4})(\d)/, '$1 $2')
+      .replace(/^(\d{4})\ (\d{4})(\d)/, '$1 $2 $3')
+      .replace(/^(\d{4})\ (\d{4})\ (\d{4})(\d)/, '$1 $2 $3 $4')
+    }else{
+      cardNumberInput.value = ''
+    }
+    
     cardNumber.innerText = cardNumberInput.value;
   })
   cardNameInput.addEventListener('input', ()=>{
