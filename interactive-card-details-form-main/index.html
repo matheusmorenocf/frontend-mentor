@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+<main>
+  
+    <section class="left-side">
+      <div class="card-container">
+        <div class="back-card">
+          <div class="gray-stripe">
+            <span class="cvcNum">000</span>
+          </div>
+        </div>
+        <div class="front-card">
+          <div class="circle-container">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+          </div>
+          <p class="cardNum">0000 0000 0000 0000</p>
+          <div class="row-card">
+            <p class="cardNam">Jane Appleseed</p>
+            <div>
+              <span class="cardExp">00</span>
+              <span class="cardExp">/</span>
+              <span class="cardExp">00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="right-side">
+      <div class="form-container">
+        <form class="form-card" autocomplete="off">
+          <p class="row-form">
+            <label for="cardName" class="text-form">Cardholder Name</label>
+            <input type="text" name="cardName" id="cardName" required placeholder="e.g. Jane Appleseed">
+          </p>
+        
+          <p class="row-form">
+            <label for="cardNumber" class="text-form">Card Number</label>
+            <input type="text" name="cardNumber" id="cardNumber" required placeholder="e.g. 1234 5678 9123 0000" maxlength="16">
+          </p>
+        
+          <p class="row-form-2">
+              <label for="expDate" class="text-form">Exp. Date (MM/YY)</label>
+              <label for="cvcCard" class="text-form">CVC</label>
+          </p>
+          <p class="row-form-input">
+              <input type="number" name="monthCard" id="monthCard" required placeholder="MM" maxlength="2">
+              <input type="number" name="yearCard" id="yearCard" required placeholder="YY" maxlength="2">
+              <input type="number" name="cvcCard" id="cvcCard" required placeholder="e.g. 123" maxlength="3">
+          </p>
+          <p class="row-form-error">
+            <span class="month-error">
+              
+            </span>
+            <span class="year-error">
+              
+            </span>
+            <span class="cvc-error">
+              
+            </span>
+          </p>
+          <input type="submit" value="Confirm" class="btn">
+        
+        </form>
+      </div>
+      <!-- Completed state start -->
+      <div class="complete-state display-hidden">
+          <img src="images/icon-complete.svg" alt="">
+        <h2>Thank you!</h2>
+        <p>We've added your card details</p>
+        <a href="#" class="btn">Continue</a>
+      </div>
+    </section>
+    <!---
+      <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+    
+    -->
+</main>
+
+</body>
+</html>
