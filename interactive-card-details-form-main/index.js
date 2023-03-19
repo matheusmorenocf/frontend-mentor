@@ -23,7 +23,7 @@ function verification(number, month, year, cvc){
   const errorNumber = number.value.length < number.maxLength ? true : false
   const errorMonth  = month.value <= 0 || month.value > 12 ? true : false 
   const errorYear = year.value < currentYear ? true : false
-  const errorCvc = cvc.value < cvc.maxLength ? true : false
+  const errorCvc = cvc.value.length < cvc.maxLength ? true : false
   if(errorNumber){
     number.classList.add('error');
   }

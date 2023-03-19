@@ -215,6 +215,11 @@ main {
   
 }
 
+.row-form-input .col-input{
+  display: flex;
+  flex-direction: column;
+}
+
 #monthCard , #yearCard {
   width: 30%;
 }
