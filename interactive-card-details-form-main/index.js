@@ -13,7 +13,7 @@ formatInput();
 const formCard = document.querySelector('.form-card');
 formCard.addEventListener('submit', (e) => {
   e.preventDefault();
-  if (verification(cardMonthInput, cardYearInput)){
+  if (verification(cardNumberInput ,cardMonthInput, cardYearInput)){
     hiddenForm()
   }
   
@@ -21,18 +21,22 @@ formCard.addEventListener('submit', (e) => {
 })
 
 
-function verification(month, year){
+function verification(number, month, year){
+  const errorNumber = number.value.length < number.maxLength ? true : false
   const errorMonth  = month.value <= 0 || month.value > 12 ? true : false 
   const errorYear = year.value < currentYear ? true : false
+  if(errorNumber){
+    number.classList.add('error');
+  }
   if(errorMonth){
-    month.classList.add('error')
+    month.classList.add('error');
     document.querySelector('.month-error').innerText = 'Invalid month'
   }
   if(errorYear) {
     year.classList.add('error')
     document.querySelector('.year-error').innerText = 'Invalid year'
   }
-  return errorMonth === true || errorYear === true ? false : true
+  return errorNumber === true || errorMonth === true || errorYear === true ? false : true
 }
 
 function formatInput() {
