@@ -19,10 +19,11 @@ formCard.addEventListener('submit', (e) => {
 })
 
 
-function verification(number, month, year){
+function verification(number, month, year, cvc){
   const errorNumber = number.value.length < number.maxLength ? true : false
   const errorMonth  = month.value <= 0 || month.value > 12 ? true : false 
   const errorYear = year.value < currentYear ? true : false
+  const errorCvc = cvc.value < cvc.maxLength ? true : false
   if(errorNumber){
     number.classList.add('error');
   }
@@ -31,10 +32,14 @@ function verification(number, month, year){
     document.querySelector('.month-error').innerText = 'Invalid month'
   }
   if(errorYear) {
-    year.classList.add('error')
+    year.classList.add('error');
     document.querySelector('.year-error').innerText = 'Invalid year'
   }
-  return errorNumber === true || errorMonth === true || errorYear === true ? false : true
+  if(errorCvc){
+    cvc.classList.add('error');
+    document.querySelector('.cvc-error').innerText = 'Invalid CVC'
+  }
+  return errorNumber === true || errorMonth === true || errorYear === true || errorCvc === true ? false : true 
 }
 
 function formatInput() {
