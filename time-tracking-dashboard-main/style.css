@@ -35,7 +35,7 @@ body, html{
   width: 100vw;
 }
 
-h2 {
+h1 {
   font-weight: 300;
 }
 
@@ -319,7 +319,7 @@ span.material-symbols-outlined {
     width: 100px;
   }
 
-  h2.title {
+  h1.title {
     font-size: 22px;
   }
 
@@ -335,21 +335,22 @@ span.material-symbols-outlined {
   }
 
   .card-user, .card {
-    width: 150px;
+    width: 200px;
   }
 
   .card-user {
-    height: 350px;
+    height: 450px;
   }
   .card {
     height: auto;
   }
 
   .user-background {
-    min-height: 220px;
+    min-height: 280px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 25px;
   }
 
   .user-container
@@ -357,12 +358,12 @@ span.material-symbols-outlined {
     width: 50px;
   }
 
-  h2.title {
-    font-size: 26px;
+  h1.title {
+    font-size: 30px;
   }
 
   p.subtitle-2 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .user-container
@@ -373,7 +374,10 @@ span.material-symbols-outlined {
   }
 
   .card-background {
-    min-height: 140px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
   .card img {
@@ -388,7 +392,7 @@ span.material-symbols-outlined {
   }
 
   .title.size {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   span.material-symbols-outlined {
