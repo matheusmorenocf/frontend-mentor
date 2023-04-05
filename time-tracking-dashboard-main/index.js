@@ -1,6 +1,5 @@
 const buttons = document.querySelectorAll('.btn');
 
-
 window.addEventListener('load', () => {
    buttons.forEach(button => {
      if(button.classList.contains('active')){
@@ -20,17 +19,7 @@ buttons.forEach(el => {
   })
 })
 
-
-const data = fetch('data.json')
-.then((response) => {
-  return response.json()
-})
-.then((data) => {
-  importData(data)
-})
-.catch((err) => {
-  alert('Erro no banco de dados!')
-})
+fetchAPI()
 
 const updateTitle = (data, parentClass) => {
   const titleElement = document.querySelector(`.${parentClass} .title`);
@@ -62,6 +51,16 @@ const importData = (data) => {
   }
 }
 
+async function fetchAPI() {
+  try {
+    const reponse = await fetch("data.json");
+    const data = await reponse.json();
+    return importData(data);
+  } catch (error) {
+    alert('Erro no banco de dados! ' + error)
+  }
+}
+
 function activeCards (button) {
   document.querySelectorAll('.row-2').forEach(allCards => {
     allCards.classList.add('hidden')
@@ -82,3 +81,4 @@ function activeCards (button) {
       
   }
 }
+
