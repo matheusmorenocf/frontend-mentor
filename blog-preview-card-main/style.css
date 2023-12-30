@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+    font-family: 'Figtree', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main{
+    background-color: hsl(47, 88%, 63%);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container{
+    margin: 0 1em;
+    background-color: white;
+    max-width: 300px;
+    height: max-content;
+    padding: 1em;
+    border-radius: 1em;
+    display: grid;
+    gap: 1em;
+    border: .1em solid black;
+    box-shadow:  .4em .4em 1px 1px black;
+    transition: .4s;
+}
+
+.card-container:hover {
+    box-shadow:  .8em .8em 1px 1px black;
+}
+
+.img-container > img {
+    max-width: 100%;
+    border-radius: .8em;
+}
+
+.card-container > .tag {
+    background-color: hsl(47, 88%, 63%);
+    width: max-content;
+    padding: .5em .8em;
+    font-size: .8em;
+    font-weight: 800;
+    border-radius: .3em;
+    margin: auto 0;
+}
+.card-container > small {
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.card-container > h1 { 
+    font-size: 1.3em;
+    font-weight: 800;
+    transition: .3s;
+}
+
+.card-container > h1:hover { 
+    color: hsl(47, 88%, 63%);
+}
+
+.card-container > p {
+    font-size: .9em;
+    color: grey;
+    line-height: 1.4em;
+    font-weight: 400;
+}
+
+.creator-card-container {
+    display: flex;
+    align-items: center;
+    gap: .8em;
+}
+
+.creator-card-container > img {
+    width: 2em;
+}
+
+.creator-card-container> h2 {
+    font-size: .8em;
+    font-weight: 800;
+}
+
+@media (max-width: 425px) {
+    .card-container {
+        height: 450px;
+    }
+
+    .img-container {
+        overflow: hidden;
+        height: 200px;
+        border-radius: .8em;
+    }
+
+    .img-container > img {
+        max-width: 109%;
+        height: 100%;
+    }
+ 
+}
